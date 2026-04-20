@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Eventernote Notifier",
+  "version": "1.0.0",
+  "description": "Eventernoteの新着お知らせ件数を表示",
+  "action": {
+    "default_icon": "images/icon48.png",
+    "default_title": "新着お知らせ件数"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://*.eventernote.com/*"
+  ],
+  "icons": {
+    "48": "images/icon48.png"
+  }
+}
